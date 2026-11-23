@@ -1,0 +1,11 @@
+import type { Choice } from './types.ts';
+export declare const CHOICES: readonly Choice[];
+export declare function isChoice(value: unknown): value is Choice;
+export declare const PAYOFF: Record<Choice, Record<Choice, number>>;
+export declare const MAX_MESSAGE_LENGTH = 500;
+export declare const MAX_MESSAGES_KEPT = 200;
+export declare const MAX_RESULTS_KEPT = 50;
+export declare const MAX_RESULTS_SHOWN = 5;
+export declare function windowMsFor(messageIndex: number): number;
+export declare const MAX_STATUS_LENGTH = 60;
+export declare const MAX_AVATAR_CHARS = 20000;

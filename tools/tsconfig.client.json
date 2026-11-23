@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "../.tsbuild/client",
+    "tsBuildInfoFile": "../.tsbuild/client.tsbuildinfo",
+    "rootDir": "../src",
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@devvit/client": ["../node_modules/@devvit/client/index.d.ts"]
+    },
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "types": ["vite/client", "node"]
+  },
+  "include": [
+    "../src/client",
+    "../src/shared",
+    "../src/server/trpc.ts",
+    "../src/server/service.ts",
+    "../src/server/store.ts"
+  ]
+}
